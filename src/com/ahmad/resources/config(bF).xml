@@ -2,10 +2,26 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-  <bean class="com.ahmad.beans.Student" id="stu1">
+    
+   <bean class="com.ahmad.beans.Student" id="stu1">
      <property name="rollno" value="101"></property>
      <property name="name" value="Raza"></property>
-  </bean>
+   </bean>
+  
 
+   <bean class="com.ahmad.beans.Student" id="stu2" name="stu3">
+     <property name="rollno" value="102"></property>
+     <property name="name" value="Ankit"></property>
+   </bean> 
+  
+   
+   <bean class="com.ahmad.beans.Programmer" name="p1" id="p1">
+       <property name="name" value="Alice"></property>
+       <property name="lt" ref="l1"></property>
+   </bean>
+   
+   <bean class="com.ahmad.beans.LapTop" name="l1" id="l1">
+       <property name="brand" value="Dell"></property>
+   </bean>
+  
 </beans>
