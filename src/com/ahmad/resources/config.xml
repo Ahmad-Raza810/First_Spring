@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+   <!--<bean class="com.ahmad.beans.Student" id="stu1">
+     <property name="rollno" value="101"></property>
+     <property name="name" value="Raza"></property>
+   </bean>-->
+  
+
+  <!-- <bean class="com.ahmad.beans.Student" id="stu2" name="stu3">
+     <property name="rollno" value="102"></property>
+     <property name="name" value="Ankit"></property>
+   </bean> -->
+  
+  
+   <bean class="com.ahmad.beans.LapTop" name="lobj">
+       <property name="name" value="Dell"></property>
+   </bean>
+
+
+   
+   <bean class="com.ahmad.beans.DeskTop" name="dobj" id="d1">
+       <property name="name" value="lenovo"></property>
+   </bean>
+  
+   
+    <bean class="com.ahmad.beans.Programmer" name="p1" id="p1">
+       <property name="d" ref="lobj"></property>
+       <property name="pName" value="Amit"></property>
+       
+    </bean>
+    
+    <bean class="com.ahmad.beans.Programmer" name="p2" id="p2">
+       <property name="d" ref="dobj"></property>
+       <property name="pName" value="Sumit"></property>
+    </bean>
+    
+    
+    
+ <!--   <bean class="com.ahmad.beans.Project" id="p2">
+        <property name="ProjectSize" value="20"></property>
+    </bean>-->
+   
+    
+   
+   
+</beans>
