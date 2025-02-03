@@ -1,30 +1,30 @@
 package com.ahmad.beans;
 
 public class Programmer {
-	private String name;
-    private LapTop lt;
+	private Device d;
+	private String pName;
+	
+
+	public String getpName() {
+		return pName;
+	}
+
 	public Programmer() {
-		System.out.println("Programmer created...");
+        System.out.println("Programmer created...");
 	}
 
-	public String getName() {
-		return name;
+	public void setpName(String pName) {
+		this.pName = pName;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-		System.out.println("Name intialized through settter.");
+	public Device getD() {
+		return d;
 	}
 
-	public LapTop getLt() {
-		return lt;
-	}
-
-	public void setLt(LapTop lt) {
-		this.lt = lt;
-	}
+	public void setD(Device d) {
+		this.d = d;
+		}
 	
 	
 	
-
 }
