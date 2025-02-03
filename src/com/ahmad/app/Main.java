@@ -19,12 +19,15 @@ public class Main {
 		//System.out.println("name: "+s1.getName()+"\nrollno: "+s1.getRollno());
 		//System.out.println("name: "+s2.getName()+"\nrollno: "+s2.getRollno());
   
-		LapTop lt=(LapTop)container.getBean("l1");
-		Programmer pr=(Programmer)container.getBean("p1");
+		Programmer p1=container.getBean("p1",Programmer.class);
+		Programmer p2=container.getBean("p2",Programmer.class);
 		
-		System.out.println("name: "+lt.getbrand());
-		System.out.println("name: "+pr.getName());
-		System.out.println("name: "+pr.getLt().getbrand());
+		p1.getD().start();
+		p2.getD().start();
+		System.out.println("p1 name:"+p1.getpName()+"\np2 name: "+p2.getpName());
+		//System.out.println("name: "+p1.getD());
+		//System.out.println("name: "+pr.getName());
+		//System.out.println("name: "+pr.getLt().getbrand());
 	}
 
 }
