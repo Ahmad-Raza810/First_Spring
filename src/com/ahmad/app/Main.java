@@ -10,7 +10,7 @@ import com.ahmad.beans.Student;
 public class Main {
 	public static void main(String[] args) {
 	
-		ApplicationContext container=new ClassPathXmlApplicationContext("/com/ahmad/resources/config(bF).xml");
+		ApplicationContext container=new ClassPathXmlApplicationContext("/com/ahmad/resources/config.xml");
 		 //Student s1=(Student)container.getBean("stu1");
 		 //Student s2=(Student)container.getBean("stu2");
 		 //Student s2=(Student)container.getBean("stu3");
